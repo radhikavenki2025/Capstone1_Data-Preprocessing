@@ -1,0 +1,47 @@
+student_habits  :  'student_id', 'age', 'gender', 'study_hours_per_day',
+                   'social_media_hours', 'netflix_hours', 'part_time_job',
+                   'attendance_percentage', 'sleep_hours', 'diet_quality',
+                   'exercise_frequency', 'parental_education_level', 'internet_quality',
+                   'mental_health_rating', 'extracurricular_participation', 'exam_score']     
+
+Create a copy of the dataset so that the original dataset remains intact .All the preprocessing can be carried out in the datasetcopy.
+
+Drop the student id as its not significant in the analysis and verify the shape with the original dataset.
+
+Standardise column names - rename column names to make it feasible to work.
+
+Compute a new column as there are 2 columns with similar data ( social media hrs & netflix hrs )
+media_hrs = social_media_hours + netflix_hours
+
+NUll values - parent education column has 91 rows of Null values. 
+High school , Bachelor , Master are the values in other rows. 
+Options are : 1. Fill the NUll rows with mode value ( High School )
+              2. Fill the NULL rows with a new value "Unknown" 
+
+Compute a function to differentiate Quantitative and Qualitative columns.
+
+Use Encoding techniques to convert Qualitative data to Quantitative data.
+
+One hot encoding : No Order 
+1. Gender - M/F/Other 
+2. parent education - par_edu_highschool , par_edu_bachelor , par_edu_master , par_edu_unknown
+3. Convert the boolean values to Integer (0/1)
+
+Binary Encoding :Yes (1) / No (0)
+1. parttime job 
+2. extracurricular 
+
+Ordinal Encoding : Poor (0), Fair, Average (1)  Good (1)
+1. diet quality 
+2.Internet quality
+
+
+Check for null values and the type of data in all columns.
+All the columns should be Quantitative and ready for Exploratory Data Analysis.
+
+
+
+
+
+
+
